@@ -1,13 +1,13 @@
 const axios = require('axios');
 
 const GPT_API_URL = 'https://sandipapi.onrender.com/gpt';
-const PREFIXES = ['ai'];
+const PREFIXES = ['ai','jmmy'];
 
 module.exports = {
   config: {
     name: "ai",
     version: 1.0,
-    author: "aminulsordar",
+    author: "aminulsordar api by lance",
     longDescription: "AI",
     category: "ai",
     guide: {
@@ -28,7 +28,7 @@ module.exports = {
       const prompt = event.body.substring(prefix.length).trim();
 
       if (!prompt) {
-        const defaultMessage = getCenteredHeader("dear | ✨") + "\n━━━━━━━━━━━━━━━━━━\nHello! Ask me anything!";
+        const defaultMessage = getCenteredHeader("jmmy™ | ✨") + "\n━━━━━━━━━━━━━━━━━━\nHello! Ask me anything!";
         await message.reply(defaultMessage);
         return;
       }
@@ -36,7 +36,7 @@ module.exports = {
       const answer = await getGPTResponse(prompt);
 
       // Adding header to the answer
-      const answerWithHeader = getCenteredHeader("Aminul|system ai") + "\n━━━━━━━━━━━━━━━━━━\n" + answer;
+      const answerWithHeader = getCenteredHeader("jmmy™ | system ai") + "\n━━━━━━━━━━━━━━━━━━\n" + answer;
       
       await message.reply(answerWithHeader);
     } catch (error) {
