@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "priscaen23@gmail.com",
-    "password": "Emmanuel2006",
+    "email": "jmmy430@gmail.com",
+    "password": "himito",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -17,7 +17,8 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100083670401783"
+    "100083670401783",
+    "100049245760900"
   ],
   "whiteListMode": {
     "enable": false,
